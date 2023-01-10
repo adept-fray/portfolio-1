@@ -8,7 +8,10 @@ body{
   font-family: "Noto Sans", sans-serif;
   font-weight: 200;
 }
-
+header{
+  overflow: hidden;
+  clear: both;
+}
 #logo{
   float: left;
   text-decoration: none;
@@ -36,35 +39,78 @@ body{
 .active{
   border-bottom: 1px solid #666;
 }
-.left{
+
+/*
+Image-hero section
+*/
+#hero_image{
+  clear: both;
+  overflow: hidden;
+  max-height: 600px;
+}
+.hero-image img{
+  width: 100%;
+}
+.hero-text{
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  left: 70%;
+  background-color: rgba(255,255,255, 0.3);
+}
+
+
+/*
+Benefits section
+*/
+#benefit{
+  overflow: hidden;
+  clear: both;
+  text-align: center;
+}
+#benefit > div{
   float: left;
   width: 50%;
+  min-height: 100px;
+  line-height: 100px;
 }
-.idea{
-  width: 200px;
-  height: 200px;
-  border: 1px solid gray;
-  border-radius: 50%;
+
+
+/*
+time_location
+*/
+#time_location{
+  overflow: hidden;
+  clear: both;
   text-align: center;
-  line-height: 200px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%);
+}
+#time_location .card{
+  float: left;
+  width: 20%;
+  margin: 0  2.5%;
+}
+.bold{
+  font-weight: bold;
+}
+
+
+
+/*
+price_plan
+*/
+#price_plan{
+  overflow: hidden;
+  clear: both;
+  text-align: center;
+}
+#price_plan .card{
+  float: left;
+  width: 30%;
+  margin: 0  1.5%;
+}
+.price{
+  border-bottom: 1px solid #666;
 }
 section{
-  overflow: hidden;
   position: relative;
-}
-.center{
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid gray;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 200px;
 }
