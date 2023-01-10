@@ -116,13 +116,25 @@ price_plan
   text-align: center;
 }
 #price_plan .card{
-  float: left;
-  width: 30%;
+  width: 100%;
   margin: 0  1.5%;
+  background-color: lightgreen;
+  margin: 30px 0;
+  line-height: 40px;
+  word-spacing: 4px;
 }
 .price{
   border-bottom: 1px solid #666;
 }
+@media screen and (min-width: 600px){
+  #price_plan .card{
+    width: 33%;
+    margin-left: 1px;
+    float: left;
+    height: 300px;
+  }
+}
+
 section{
   position: relative;
 }
